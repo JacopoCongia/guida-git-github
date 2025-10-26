@@ -92,3 +92,89 @@ o, se il tuo branch locale si chiama ```master```
 ## **9)** Verifica che tutto sia andato a buon fine:
 
 Apri GitHub nel browser e vedrai i file che hai caricato nel tuo repository!
+
+---  
+
+# Comandi Utili (Forniti da ChatGPT)
+## 🧩 1️⃣ Configurazione iniziale
+
+| Comando | Descrizione |
+|----------|-------------|
+| `git config --global user.name "Tuo Nome"` | Imposta il nome che comparirà nei commit |
+| `git config --global user.email "tu@email.com"` | Imposta l’email associata ai commit |
+| `git config --global -l` | Mostra le configurazioni correnti |
+| `git init` | Inizializza un nuovo repository locale |
+| `git clone <url>` | Clona un repository esistente da GitHub |
+
+---
+
+## 📂 2️⃣ Aggiungere e controllare i file
+
+| Comando | Descrizione |
+|----------|-------------|
+| `git status` | Mostra i file modificati, aggiunti o in attesa di commit |
+| `git add .` | Aggiunge tutti i file modificati all’area di staging |
+| `git add nomefile` | Aggiunge solo un file specifico |
+| `git rm --cached nomefile` | Toglie un file dallo staging (ma non lo cancella dal disco) |
+
+---
+
+## 🧾 3️⃣ Creare e gestire i commit
+
+| Comando | Descrizione |
+|----------|-------------|
+| `git commit -m "Messaggio"` | Crea un nuovo commit con messaggio |
+| `git commit -am "Messaggio"` | Aggiunge e committa tutti i file già tracciati in un solo passo |
+| `git log` | Mostra la cronologia dei commit |
+| `git show` | Mostra i dettagli dell’ultimo commit |
+| `git diff` | Mostra le differenze tra file modificati e l’ultimo commit |
+
+---
+
+## 🌿 4️⃣ Lavorare con i branch
+
+| Comando | Descrizione |
+|----------|-------------|
+| `git branch` | Mostra i branch locali |
+| `git branch nome-branch` | Crea un nuovo branch |
+| `git checkout nome-branch` | Passa a un branch diverso |
+| `git switch nome-branch` | Alternativo moderno a `checkout` |
+| `git merge nome-branch` | Unisce un branch nel branch attuale |
+| `git branch -d nome-branch` | Elimina un branch locale |
+
+---
+
+## 🌐 5️⃣ Collegare e sincronizzare con GitHub
+
+| Comando | Descrizione |
+|----------|-------------|
+| `git remote add origin <url>` | Collega il repo locale a GitHub |
+| `git remote -v` | Mostra gli URL remoti configurati |
+| `git push -u origin main` | Invia il branch “main” su GitHub |
+| `git pull` | Riceve e integra le modifiche dal remoto |
+| `git fetch` | Scarica aggiornamenti dal remoto senza integrarli subito |
+
+---
+
+## 🧰 6️⃣ Ripristinare e risolvere errori
+
+| Comando | Descrizione |
+|----------|-------------|
+| `git restore nomefile` | Ripristina un file modificato all’ultimo commit |
+| `git reset HEAD nomefile` | Toglie un file dallo staging |
+| `git reset --hard` | Riporta tutto all’ultimo commit (**⚠️ distruttivo**) |
+| `git revert <hash>` | Crea un nuovo commit che annulla quello indicato |
+| `git stash` | Salva modifiche temporaneamente senza committarle |
+| `git stash pop` | Recupera le modifiche salvate |
+
+---
+
+## 🧭 7️⃣ Informazioni e diagnostica
+
+| Comando | Descrizione |
+|----------|-------------|
+| `git status` | Stato attuale del repository |
+| `git log --oneline --graph --all` | Mostra cronologia compatta e visuale |
+| `git remote show origin` | Mostra info sul remoto |
+| `git config --list` | Mostra la configurazione attuale di Git |
+
